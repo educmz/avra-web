@@ -18,7 +18,7 @@ interface EventPromotion {
 
 export function buildEventWhatsAppMessage(promotion: EventPromotion): string {
   const sections = [
-    "Hola, quisiera solicitar información sobre la siguiente opción de VIVAYA:",
+    "Hola, quisiera solicitar información sobre la siguiente opción de Avra:",
     `*${[promotion.name, promotion.subtitle].filter(Boolean).join(" — ")}*`,
   ];
 

@@ -217,7 +217,7 @@ export function SocialSection() {
                   </div>
 
                   <p className="text-sm font-semibold text-[#302E2A]">
-                    vivaya
+                    avra
                   </p>
                 </div>
 
@@ -231,7 +231,7 @@ export function SocialSection() {
               <div className={styles.media}>
                 <Image
                   src="/images/about/social/instagram.webp"
-                  alt="Publicación de Instagram de Vivaya"
+                  alt="Publicación de Instagram de Avra"
                   fill
                   sizes="(min-width: 1280px) 384px, (min-width: 1024px) calc((100vw - 128px) / 3), (min-width: 768px) calc((100vw - 72px) / 2), calc(100vw - 48px)"
                   className="object-cover"
@@ -289,7 +289,7 @@ export function SocialSection() {
 
                 <p className="mt-4 min-h-[48px] text-sm leading-6 text-[#302E2A]">
                   <span className="mr-2 font-semibold">
-                    vivaya
+                    avra
                   </span>
                   Los buenos momentos siempre saben mejor cuando se comparten
                 </p>
@@ -325,7 +325,7 @@ export function SocialSection() {
 <div className={styles.media}>
                 <Image
                   src="/images/about/social/tiktok.webp"
-                  alt="Publicación de TikTok de Vivaya"
+                  alt="Publicación de TikTok de Avra"
                   fill
                   sizes="(min-width: 1280px) 384px, (min-width: 1024px) calc((100vw - 128px) / 3), (min-width: 768px) calc((100vw - 72px) / 2), calc(100vw - 48px)"
                   className="object-cover"
@@ -390,7 +390,7 @@ export function SocialSection() {
                 {/* TEXTO */}
                 <div className="absolute bottom-6 left-4 max-w-[72%] text-white">
                   <p className="text-sm font-semibold">
-                    @vivaya
+                    @avra
                   </p>
 
                   <p className="mt-2 text-sm leading-5 text-white/90">
@@ -436,7 +436,7 @@ export function SocialSection() {
 
                   <div>
                     <p className="text-sm font-semibold text-[#050505]">
-                      Vivaya
+                      Avra
                     </p>
 
                     <p className="text-[11px] text-[#65676B]">
@@ -461,7 +461,7 @@ export function SocialSection() {
               <div className={styles.media}>
                 <Image
                   src="/images/about/social/facebook.webp"
-                  alt="Publicación de Facebook de Vivaya"
+                  alt="Publicación de Facebook de Avra"
                   fill
                   sizes="(min-width: 1280px) 384px, (min-width: 1024px) calc((100vw - 128px) / 3), (min-width: 768px) calc((100vw - 72px) / 2), calc(100vw - 48px)"
                   className="object-cover"

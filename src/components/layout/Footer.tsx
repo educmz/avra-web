@@ -44,7 +44,7 @@ export function Footer() {
           <div className="justify-self-center sm:justify-self-start">
             <Link
               href="/"
-              aria-label="Vivaya, inicio"
+              aria-label="Avra, inicio"
               className="
                 inline-flex
                 items-center
@@ -59,8 +59,8 @@ export function Footer() {
               }}
             >
               <Image
-                src="/images/brand/logo_negro.png"
-                alt="Vivaya"
+                src="/images/brand/avra-wordmark-black.png"
+                alt="Avra"
                 width={2172}
                 height={724}
                 className="h-auto w-28 object-contain"

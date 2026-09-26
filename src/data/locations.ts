@@ -1,4 +1,4 @@
-export interface VivayaLocation {
+export interface AvraLocation {
   id: string;
   name: string;
   address: string;
@@ -9,7 +9,7 @@ export interface VivayaLocation {
   note?: string;
 }
 
-export const locations: VivayaLocation[] = [
+export const locations: AvraLocation[] = [
   {
     id: "local-1",
     name: "Miraflores",

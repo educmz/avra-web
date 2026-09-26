@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { ComplaintBook } from "@/components/complaints/ComplaintBook";
 
 export const metadata: Metadata = {
-  title: { absolute: "Libro de Reclamaciones | Vivaya" },
-  description: "Completa y revisa tu hoja de reclamación de Vivaya.",
+  title: { absolute: "Libro de Reclamaciones | Avra" },
+  description: "Completa y revisa tu hoja de reclamación de Avra.",
 };
 
 export default function ComplaintBookPage() {

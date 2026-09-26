@@ -4,9 +4,9 @@ export const aboutTimeline = [
     label: "El comienzo",
     title: "Una idea toma forma",
     description:
-      "Vivaya nace con la intención de acercar opciones frescas y naturales a una rutina cada vez más dinámica.",
+      "Avra nace con la intención de acercar opciones frescas y naturales a una rutina cada vez más dinámica.",
     image: "/images/about/about-product.webp",
-    imageAlt: "Producto Vivaya",
+    imageAlt: "Producto Avra",
   },
   {
     number: "02",
@@ -15,16 +15,16 @@ export const aboutTimeline = [
     description:
       "La propuesta comienza a conectar producto, bienestar y una experiencia pensada para el día a día.",
     image: "/images/about/about-lifestyle.webp",
-    imageAlt: "Experiencia Vivaya",
+    imageAlt: "Experiencia Avra",
   },
   {
     number: "03",
     label: "Más cerca",
     title: "Nuevas formas de llegar",
     description:
-      "Vivaya incorpora nuevos formatos y puntos de contacto para acercarse cada vez más a las personas.",
+      "Avra incorpora nuevos formatos y puntos de contacto para acercarse cada vez más a las personas.",
     image: "/images/about/about-machine.webp",
-    imageAlt: "Punto de venta Vivaya",
+    imageAlt: "Punto de venta Avra",
   },
   {
     number: "04",
@@ -33,7 +33,7 @@ export const aboutTimeline = [
     description:
       "Continuamos construyendo una marca alrededor de bienestar, frescura y una experiencia cada vez más accesible.",
     image: "/images/about/about-team.webp",
-    imageAlt: "Equipo Vivaya",
+    imageAlt: "Equipo Avra",
   },
 ] as const;
 
@@ -79,22 +79,22 @@ export const aboutValues = [
 export const aboutGallery = [
   {
     src: "/images/about/about-product.webp",
-    alt: "Producto Vivaya",
+    alt: "Producto Avra",
     label: "Producto",
   },
   {
     src: "/images/about/about-machine.webp",
-    alt: "Punto de venta Vivaya",
+    alt: "Punto de venta Avra",
     label: "Cerca de ti",
   },
   {
     src: "/images/about/about-lifestyle.webp",
-    alt: "Experiencia Vivaya",
+    alt: "Experiencia Avra",
     label: "Bienestar",
   },
   {
     src: "/images/about/about-team.webp",
-    alt: "Equipo Vivaya",
+    alt: "Equipo Avra",
     label: "Personas",
   },
 ] as const;

@@ -9,42 +9,42 @@ const visuals: Record<CartaCategoryId, { background: string; image: string; alt:
   smoothies: {
     background: "#DCEEF2",
     image: "/images/carta/naranja-fresa.webp",
-    alt: "Naranja Fresa de Vivaya",
+    alt: "Naranja Fresa de Avra",
   },
   "tes-helados": {
     background: "#F6E9B8",
     image: "/images/carta/jamaica.webp",
-    alt: "Té helado Jamaica de Vivaya",
+    alt: "Té helado Jamaica de Avra",
   },
   "bebidas-calientes": {
     background: "#F5D6C2",
     image: "/images/carta/chocolate-caliente.webp",
-    alt: "Chocolate Caliente de Vivaya",
+    alt: "Chocolate Caliente de Avra",
   },
   frappes: {
     background: "#E6E1F0",
     image: "/images/carta/mocaccino.webp",
-    alt: "Frappé Mocaccino de Vivaya",
+    alt: "Frappé Mocaccino de Avra",
   },
   waffles: {
     background: "#F6E9B8",
     image: "/images/carta/waffle.webp",
-    alt: "Waffle de Vivaya",
+    alt: "Waffle de Avra",
   },
   sandwiches: {
     background: "#DFEACF",
     image: "/images/carta/mixto.png",
-    alt: "Sándwich Mixto Ninfit de Vivaya",
+    alt: "Sándwich Mixto Ninfit de Avra",
   },
   tostones: {
     background: "#F5D6C2",
     image: "/images/carta/toston-benedictino.webp",
-    alt: "Tostón Benedictino de Vivaya",
+    alt: "Tostón Benedictino de Avra",
   },
   pizzas: {
     background: "#DCEEF2",
     image: "/images/carta/pizza-hawaiana.webp",
-    alt: "Pizza Hawaiana de Vivaya",
+    alt: "Pizza Hawaiana de Avra",
   },
 };
 
@@ -89,7 +89,7 @@ export function CravingsSection() {
 
           <Link href="/eventos" className="group flex min-h-[360px] flex-col overflow-hidden rounded-lg bg-[#E5EBD8] text-[#302E2A] transition-transform duration-200 hover:-translate-y-1 motion-reduce:transform-none sm:min-h-[420px] lg:min-h-0">
             <div className="relative min-h-[260px] flex-1 overflow-hidden">
-              <Image src="/images/events/waffles-salchipapas-churros.webp" alt="Waffles, salchipapas y churros para eventos Vivaya" fill sizes="(min-width: 1024px) 25vw, 100vw" className="object-cover object-center" />
+              <Image src="/images/events/waffles-salchipapas-churros.webp" alt="Waffles, salchipapas y churros para eventos Avra" fill sizes="(min-width: 1024px) 25vw, 100vw" className="object-cover object-center" />
             </div>
             <div className="flex items-center justify-center px-6 py-8 text-center lg:py-10">
               <h3 className="font-heading text-4xl uppercase leading-none sm:text-5xl">Eventos</h3>

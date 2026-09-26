@@ -4,13 +4,13 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { ArrowUpRight, MapPin } from "lucide-react";
 
-import type { VivayaLocation } from "@/data/locations";
+import type { AvraLocation } from "@/data/locations";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
 interface LocationCardProps {
-  location: VivayaLocation;
+  location: AvraLocation;
   index: number;
 }
 
@@ -36,7 +36,7 @@ export function LocationCard({ location, index }: LocationCardProps) {
       <div className="relative aspect-[16/11] overflow-hidden bg-[#F5EDDF] md:aspect-auto md:min-h-[380px]">
         <Image
           src={location.image}
-          alt={`Local VIVAYA ${location.name}`}
+          alt={`Local Avra ${location.name}`}
           fill
           sizes="(min-width: 1160px) 560px, (min-width: 768px) 45vw, 92vw"
           className="object-cover"
@@ -46,7 +46,7 @@ export function LocationCard({ location, index }: LocationCardProps) {
       {/* INFO */}
       <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
         <h2 className="mt-3 text-3xl font-extrabold uppercase leading-[1.05] tracking-[0.01em] sm:text-4xl">
-          <span className="block text-[#302E2A]/35">VIVAYA</span>
+          <span className="block text-[#302E2A]/35">Avra</span>
           {location.name}
         </h2>
 
@@ -82,7 +82,7 @@ export function LocationCard({ location, index }: LocationCardProps) {
               href={location.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`Ver VIVAYA ${location.name} en Google Maps (abre otra pestaña)`}
+              aria-label={`Ver Avra ${location.name} en Google Maps (abre otra pestaña)`}
               className="group/btn relative inline-flex min-h-14 w-full items-center justify-center overflow-hidden bg-[#302E2A] px-6 text-sm font-bold uppercase tracking-[0.12em] text-white transition-[background-color,translate,scale] duration-200 hover:-translate-y-0.5 hover:bg-[#454039] active:translate-y-0 active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 motion-reduce:transition-none motion-reduce:hover:translate-y-0 sm:w-auto"
             >
               <span className="relative z-10 flex items-center gap-2.5">

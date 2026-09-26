@@ -21,7 +21,7 @@ export function AboutIntroSection() {
                 fontFamily: "var(--font-script), 'Pacifico', cursive",
               }}
             >
-              Conoce Vivaya
+              Conoce Avra
             </p>
           </AboutItem>
 
@@ -53,7 +53,7 @@ export function AboutIntroSection() {
               "
             >
               <p style={{ textAlign: "justify" }} className="text-base leading-8 text-[#4B4844] sm:text-lg sm:leading-9 lg:text-[1.2rem] lg:leading-10">
-                Vivaya nace con la idea de crear un espacio donde disfrutar
+                Avra nace con la idea de crear un espacio donde disfrutar
                 algo rico también signifique disfrutar el momento. Creemos en
                 esas pequeñas pausas que hacen bien: compartir una comida,
                 conversar sin apuro, celebrar algo especial o simplemente

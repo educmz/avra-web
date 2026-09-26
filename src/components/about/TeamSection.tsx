@@ -50,8 +50,8 @@ export function TeamSection() {
               className="relative z-10 aspect-[4/3] w-full overflow-hidden rounded-2xl bg-[#F3EADF] shadow-[0_30px_70px_-32px_rgba(48,46,42,0.35)] sm:rounded-3xl"
             >
               <Image
-                src="/images/about/equipo-vivaya.webp"
-                alt="Equipo de Vivaya"
+                src="/images/about/equipo-avra.webp"
+                alt="Equipo de Avra"
                 fill
                 priority
                 sizes="(max-width: 639px) 100vw, 58vw"

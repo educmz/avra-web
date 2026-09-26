@@ -27,7 +27,7 @@ export function Header() {
       >
         <Link
           href="/"
-          aria-label="Vivaya, inicio"
+          aria-label="Avra, inicio"
           className="
             relative z-50 shrink-0
             transition-transform duration-300
@@ -36,8 +36,8 @@ export function Header() {
           "
         >
           <Image
-            src="/images/brand/logo_negro.png"
-            alt="Vivaya"
+            src="/images/brand/avra-wordmark-black.png"
+            alt="Avra"
             width={2172}
             height={724}
             priority

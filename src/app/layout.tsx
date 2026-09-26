@@ -26,15 +26,12 @@ const accentFont = Caveat({
   variable: "--font-accent",
 });
 
-// Sustituto libre de "Novecento" (fuente de pago que usa Pickadeli).
-// Montserrat: grotesca geométrica con pesos hasta 800 (bold real). Carta.
 const cartaFont = Montserrat({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
   variable: "--font-carta",
 });
 
-// Script redondeado, parecido al logo de Vivaya. Acentos en Nosotros.
 const scriptFont = Pacifico({
   subsets: ["latin"],
   weight: "400",
@@ -42,11 +39,40 @@ const scriptFont = Pacifico({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://avra.pe"),
+
   title: {
-    default: siteConfig.name,
+    default: `${siteConfig.name} | Activa lo natural`,
     template: `%s | ${siteConfig.name}`,
   },
+
   description: siteConfig.description,
+
+  applicationName: siteConfig.name,
+
+  alternates: {
+    canonical: "https://avra.pe",
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "es_PE",
+    url: "https://avra.pe",
+    siteName: siteConfig.name,
+    title: `${siteConfig.name} | Activa lo natural`,
+    description: siteConfig.description,
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.name} | Activa lo natural`,
+    description: siteConfig.description,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -66,7 +92,6 @@ export default function RootLayout({
         </main>
 
         <Footer />
-
       </body>
     </html>
   );

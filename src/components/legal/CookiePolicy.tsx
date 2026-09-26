@@ -20,7 +20,7 @@ export function CookiePolicy() {
       />
 
       <Container className="relative sm:px-6">
-        <LegalPageHeader eyebrow="Política de cookies" title="Navegar, sin complicaciones." description="Te explicamos de forma sencilla cuándo pueden utilizarse cookies o tecnologías similares al visitar Vivaya.">
+        <LegalPageHeader eyebrow="Política de cookies" title="Navegar, sin complicaciones." description="Te explicamos de forma sencilla cuándo pueden utilizarse cookies o tecnologías similares al visitar Avra.">
           <p className="mt-5 text-center text-xs text-[#8C867F]">
             Última actualización · Septiembre de 2026
           </p>
@@ -39,9 +39,9 @@ export function CookiePolicy() {
               </p>
             </CookieSection>
 
-            <CookieSection number="02" title="Qué utiliza Vivaya">
+            <CookieSection number="02" title="Qué utiliza Avra">
               <p>
-                Actualmente Vivaya no utiliza cookies propias para publicidad,
+                Actualmente Avra no utiliza cookies propias para publicidad,
                 analítica de comportamiento ni creación de perfiles.
               </p>
 
@@ -115,7 +115,7 @@ export function CookiePolicy() {
               <p>
                 Las cookies que puedan ser instaladas por servicios externos
                 son gestionadas por sus respectivos proveedores y no
-                directamente por Vivaya.
+                directamente por Avra.
               </p>
             </CookieSection>
 

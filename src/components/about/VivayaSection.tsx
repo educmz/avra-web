@@ -170,7 +170,7 @@ function HeroBlock() {
         >
           <Image
             src="/images/about/about-product.webp"
-            alt="Mesa VIVAYA con waffle, smoothie y sándwich"
+            alt="Mesa Avra con waffle, smoothie y sándwich"
             fill
             sizes="(max-width: 767px) 88vw, (max-width: 1023px) 46vw, 560px"
             className="object-cover"
@@ -197,7 +197,7 @@ function HeroBlock() {
 
         <AboutItem className="mt-5">
           <p className="max-w-md text-sm leading-6 text-[#77736D] sm:text-base sm:leading-7">
-            VIVAYA nace para acercar fruta real y opciones frescas a una
+            Avra nace para acercar fruta real y opciones frescas a una
             rutina cada vez más dinámica. Conectamos producto, bienestar y
             una experiencia pensada para el día a día.
           </p>
@@ -240,7 +240,7 @@ const rows: Row[] = [
     title: "Sabor para\ncada momento.",
     body: "Una propuesta pensada para acompañar tus antojos, tus pausas y esos momentos que simplemente se disfrutan.",
     image: "/images/about/about-lifestyle.webp",
-    imageAlt: "Persona disfrutando una bebida a la entrada de VIVAYA",
+    imageAlt: "Persona disfrutando una bebida a la entrada de Avra",
     shape: "#D8E7CB",
     badge: { icon: Sparkles, text: "Hecho al momento" },
     imageSide: "right",
@@ -250,7 +250,7 @@ const rows: Row[] = [
     title: "Ingredientes\nque reconoces.",
     body: "Empezamos por fruta real y opciones frescas. Lo natural puede ser rico, rápido y estar donde lo necesitas.",
     image: "/images/about/about-hero.webp",
-    imageAlt: "Selección de platos y bebidas VIVAYA",
+    imageAlt: "Selección de platos y bebidas Avra",
     shape: "#C9DEEA",
     badge: { icon: Leaf, text: "Fruta de verdad" },
     imageSide: "left",
@@ -327,7 +327,7 @@ function StoryRow({ row }: { row: Row }) {
 
 /* -------------------------------------------------------------------------- */
 
-export function VivayaSection() {
+export function AvraSection() {
   return (
     <section className="relative overflow-hidden bg-background py-12 sm:py-16 lg:py-20">
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-6 lg:px-10">

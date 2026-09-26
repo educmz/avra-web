@@ -4,7 +4,7 @@ import { LocationsCatalog } from "@/components/locations/LocationsCatalog";
 export const metadata: Metadata = {
   title: "Locales",
   description:
-    "Encuentra nuestros locales Vivaya, horarios de atención y cómo llegar.",
+    "Encuentra nuestros locales Avra, horarios de atención y cómo llegar.",
 };
 
 export default function LocationsPage() {

@@ -16,21 +16,21 @@ const essenceItems = [
     label: "Propósito",
     title: "Crear momentos para disfrutar",
     background: "#E8DCEF",
-    image: "/images/about/essence/purpose-vivaya.webp",
+    image: "/images/about/essence/purpose-avra.webp",
   },
   {
     id: "mission",
     label: "Misión",
     title: "Hacer especial lo cotidiano",
     background: "#E2ECD4",
-    image: "/images/about/essence/mission-vivaya.webp",
+    image: "/images/about/essence/mission-avra.webp",
   },
   {
     id: "vision",
     label: "Visión",
     title: "Seguir creciendo contigo",
     background: "#F4DFA2",
-    image: "/images/about/essence/vision-vivaya.webp",
+    image: "/images/about/essence/vision-avra.webp",
   },
 ];
 

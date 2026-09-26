@@ -9,7 +9,7 @@ import { SocialSection } from "@/components/about/SocialSection";
 export const metadata: Metadata = {
   title: "Nosotros",
   description:
-    "Conoce la historia, esencia y propuesta que hay detrás de Vivaya.",
+    "Conoce la historia, esencia y propuesta que hay detrás de Avra.",
 };
 
 export default function AboutPage() {

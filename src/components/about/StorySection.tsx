@@ -12,12 +12,12 @@ import {
 } from "@/components/about/AboutMotion";
 
 const storyImages = [
-  { src: "/images/about/about-lifestyle.webp", alt: "Experiencia VIVAYA", layout: "col-start-1 row-start-1 row-span-2 lg:row-span-3" },
-  { src: "/images/about/about-product.webp", alt: "Productos VIVAYA", layout: "col-start-2 row-start-1" },
-  { src: "/images/about/about-machine.webp", alt: "Preparación en VIVAYA", layout: "col-start-2 row-start-2 row-span-2" },
-  { src: "/images/about/about-team.webp", alt: "Equipo VIVAYA", layout: "col-start-1 row-start-3 lg:col-start-3 lg:row-start-1" },
-  { src: "/images/about/about-lifestyle.webp", alt: "Momentos para compartir en VIVAYA", layout: "col-start-1 row-start-4 row-span-2 lg:col-start-3 lg:row-start-2" },
-  { src: "/images/about/about-product.webp", alt: "Sabores VIVAYA", layout: "col-start-2 row-start-4 row-span-2 lg:col-start-4 lg:row-start-1 lg:row-span-3" },
+  { src: "/images/about/about-lifestyle.webp", alt: "Experiencia Avra", layout: "col-start-1 row-start-1 row-span-2 lg:row-span-3" },
+  { src: "/images/about/about-product.webp", alt: "Productos Avra", layout: "col-start-2 row-start-1" },
+  { src: "/images/about/about-machine.webp", alt: "Preparación en Avra", layout: "col-start-2 row-start-2 row-span-2" },
+  { src: "/images/about/about-team.webp", alt: "Equipo Avra", layout: "col-start-1 row-start-3 lg:col-start-3 lg:row-start-1" },
+  { src: "/images/about/about-lifestyle.webp", alt: "Momentos para compartir en Avra", layout: "col-start-1 row-start-4 row-span-2 lg:col-start-3 lg:row-start-2" },
+  { src: "/images/about/about-product.webp", alt: "Sabores Avra", layout: "col-start-2 row-start-4 row-span-2 lg:col-start-4 lg:row-start-1 lg:row-span-3" },
 ];
 
 export function StorySection() {

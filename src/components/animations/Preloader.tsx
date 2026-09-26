@@ -21,7 +21,7 @@ export function Preloader() {
     let timeline: gsap.core.Timeline | undefined;
     let finished = false;
     document.body.style.overflow = "hidden";
-    document.documentElement.dataset.vivayaPreloader = "active";
+    document.documentElement.dataset.avraPreloader = "active";
 
     const prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
@@ -32,10 +32,10 @@ export function Preloader() {
 
       revealedRef.current = true;
 
-      delete document.documentElement.dataset.vivayaPreloader;
+      delete document.documentElement.dataset.avraPreloader;
 
       window.dispatchEvent(
-        new Event("vivaya:preloader-complete")
+        new Event("avra:preloader-complete")
       );
     };
 
@@ -156,7 +156,7 @@ export function Preloader() {
 
       document.body.style.overflow = previousOverflow;
 
-      delete document.documentElement.dataset.vivayaPreloader;
+      delete document.documentElement.dataset.avraPreloader;
     };
   }, []);
 
@@ -177,8 +177,8 @@ export function Preloader() {
         >
           <Image
             ref={imageRef}
-            src="/images/brand/logo_naranja.png"
-            alt="Vivaya"
+            src="/images/brand/avra-wordmark-black.png"
+            alt="Avra"
             width={1774}
             height={887}
             priority

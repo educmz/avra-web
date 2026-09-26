@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 
 const slides = [
   { id: "products", desktop: "/images/home/banners/home-products-desktop.webp", mobile: "/images/home/banners/home-products-mobile.webp", alt: "Hecho para disfrutar: antojos, bebidas y momentos para compartir" },
-  { id: "events", desktop: "/images/home/banners/home-events-desktop.webp", mobile: "/images/home/banners/home-events-mobile.webp", alt: "Eventos Vivaya: opciones para compartir y celebrar" },
-  { id: "drinks", desktop: "/images/home/banners/home-drinks-desktop.webp", mobile: "/images/home/banners/home-drinks-mobile.webp", alt: "Bebidas Vivaya para disfrutar en cada momento" },
+  { id: "events", desktop: "/images/home/banners/home-events-desktop.webp", mobile: "/images/home/banners/home-events-mobile.webp", alt: "Eventos Avra: opciones para compartir y celebrar" },
+  { id: "drinks", desktop: "/images/home/banners/home-drinks-desktop.webp", mobile: "/images/home/banners/home-drinks-mobile.webp", alt: "Bebidas Avra para disfrutar en cada momento" },
 ] as const;
 
 export function HeroSection() {

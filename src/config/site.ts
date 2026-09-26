@@ -1,7 +1,8 @@
 export const siteConfig = {
-  name: "Vivaya",
+  name: "Avra",
   description:
-    "Jugos y bebidas naturales pensadas para acompañar tu día.",
+    "Avra ofrece comida, jugos y bebidas, experiencias para eventos y soluciones con máquinas expendedoras, pensadas para disfrutar de forma práctica y natural.",
+  url: "https://avra.pe",
   email: "",
   phone: "",
 };

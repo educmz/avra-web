@@ -38,7 +38,7 @@ export function PrivacyPolicy() {
       />
 
       <Container className="relative sm:px-6">
-        <LegalPageHeader eyebrow="Política de privacidad" title="Tu información, siempre clara." description="Te contamos de forma sencilla cómo tratamos la información relacionada con tu visita a Vivaya.">
+        <LegalPageHeader eyebrow="Política de privacidad" title="Tu información, siempre clara." description="Te contamos de forma sencilla cómo tratamos la información relacionada con tu visita a Avra.">
           <p className="mt-5 text-center text-xs text-[#8C867F]">
             Última actualización · Septiembre de 2026
           </p>
@@ -49,9 +49,9 @@ export function PrivacyPolicy() {
       <section className="relative pb-16 sm:pb-20 lg:pb-24">
         <Container className="sm:px-6">
           <div className="mx-auto max-w-4xl space-y-6">
-            <PrivacySection number="01" title="Sobre Vivaya">
+            <PrivacySection number="01" title="Sobre Avra">
               <p>
-                Vivaya es una marca de bebidas naturales que utiliza este sitio
+                Avra es una marca de bebidas naturales que utiliza este sitio
                 para presentar sus productos, locales y contenidos.
               </p>
             </PrivacySection>
@@ -106,7 +106,7 @@ export function PrivacyPolicy() {
 
             <PrivacySection number="05" title="Conservación y seguridad">
               <p>
-                Vivaya procura que la información tratada se conserve únicamente
+                Avra procura que la información tratada se conserve únicamente
                 durante el tiempo necesario para las finalidades que correspondan
                 y conforme a las obligaciones legales aplicables.
               </p>
@@ -143,7 +143,7 @@ export function PrivacyPolicy() {
               <p className="mt-7">
                 Las solicitudes relacionadas con datos personales podrán
                 presentarse a través de los canales oficiales de atención que
-                Vivaya mantenga habilitados.
+                Avra mantenga habilitados.
               </p>
 
               <Link

@@ -43,7 +43,7 @@ export function Navbar({ className }: { className?: string }) {
           >
             {isActive && (
               <motion.span
-                layoutId="vivaya-active-nav"
+                layoutId="avra-active-nav"
                 aria-hidden="true"
                 className="
                   absolute

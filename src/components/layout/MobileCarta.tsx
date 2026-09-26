@@ -73,8 +73,8 @@ export function MobileCarta({
             className="relative flex min-h-12 w-[120px] shrink-0 items-center rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FF8A00]"
           >
             <Image
-              src="/images/brand/logo_negro.png"
-              alt="Vivaya"
+              src="/images/brand/avra-wordmark-black.png"
+              alt="Avra"
               width={400}
               height={160}
               priority

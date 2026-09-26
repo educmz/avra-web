@@ -31,7 +31,7 @@ export function FinalCtaSection() {
   return (
     <section aria-labelledby="final-cta-title" className={`${styles.section} ${styles.finalSection}`}>
       <div className={`${styles.container} text-center`}>
-        <HomeHeading id="final-cta-title" eyebrow="¿Y ahora?">Elige cómo quieres disfrutar VIVAYA.</HomeHeading>
+        <HomeHeading id="final-cta-title" eyebrow="¿Y ahora?">Elige cómo quieres disfrutar Avra</HomeHeading>
       </div>
       <div className={`${styles.container} ${styles.panels}`} style={{ "--cta-columns": columns } as CSSProperties} onMouseLeave={() => setActivePanel(null)}>
         {actions.map((action) => (
