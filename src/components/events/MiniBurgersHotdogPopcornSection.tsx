@@ -12,6 +12,7 @@ import {
 
 import { AnimatedTitle } from "@/components/sections/AnimatedTitle";
 import {
+  EventSection,
   EventReveal,
   EventRevealImage,
   EventGroup,
@@ -39,9 +40,8 @@ export function MiniBurgersHotdogPopcornSection() {
   const whatsappUrl = buildEventWhatsAppUrl(whatsappNumber, promotion);
 
   return (
-    <section className="bg-[#FFF8F3] py-10 sm:py-12 lg:py-16">
-      <div className="mx-auto w-full max-w-7xl px-6 sm:px-6 lg:px-10">
-        <div className="grid grid-cols-1 items-center gap-7 lg:grid-cols-2 lg:gap-10">
+    <EventSection>
+        <div className="grid grid-cols-1 items-center gap-7 lg:grid-cols-2 lg:gap-10 xl:grid-cols-[minmax(0,1fr)_minmax(0,520px)]">
           {/* TÍTULO — en móvil va sobre la imagen */}
           <div className="min-w-0 lg:hidden">
             <p
@@ -62,7 +62,7 @@ export function MiniBurgersHotdogPopcornSection() {
           </div>
 
           {/* CONTENIDO */}
-          <EventReveal delay={0.05} className="order-2 min-w-0 max-w-xl lg:order-1">
+          <EventReveal delay={0.05} className="order-2 min-w-0 max-w-xl lg:order-1 lg:max-w-none">
             <div className="hidden lg:block">
               <EventItem>
                 <p
@@ -170,7 +170,7 @@ export function MiniBurgersHotdogPopcornSection() {
           </EventReveal>
 
           {/* IMAGEN */}
-          <EventRevealImage className="order-1 relative mx-auto w-full max-w-[520px] overflow-hidden rounded-2xl bg-[#F4E8DF] lg:order-2">
+          <EventRevealImage className="order-1 relative mx-auto w-full max-w-[520px] overflow-hidden rounded-2xl bg-[#F4E8DF] lg:order-2 lg:ml-auto lg:mr-0">
             <div className="relative aspect-[1122/1402]">
               <Image
                 src="/images/events/mini-burgers-hotdog-popcorn.webp"
@@ -182,7 +182,6 @@ export function MiniBurgersHotdogPopcornSection() {
             </div>
           </EventRevealImage>
         </div>
-      </div>
-    </section>
+    </EventSection>
   );
 }

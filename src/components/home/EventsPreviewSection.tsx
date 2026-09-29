@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { Container } from "@/components/ui/Container";
 import { HomeImage } from "./HomeImage";
 import { HomeHeading } from "./HomeHeading";
 import styles from "./Home.module.css";
@@ -91,7 +92,7 @@ export function EventsPreviewSection() {
       aria-labelledby="events-preview-title"
       className={`${styles.section} overflow-hidden`}
     >
-      <div className={styles.container}>
+      <Container>
         {/* Heading */}
         <div className={styles.eventHeader}>
           <div className="max-w-3xl">
@@ -236,7 +237,7 @@ export function EventsPreviewSection() {
             </span>
           </Link>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { Container } from "@/components/ui/Container";
 import { HomeImage } from "./HomeImage";
 import { HomeHeading } from "./HomeHeading";
 import styles from "./Home.module.css";
@@ -28,7 +29,7 @@ export function HealthyProductsSection() {
       aria-labelledby="lifestyle-title"
       className={styles.section}
     >
-      <div className={styles.container}>
+      <Container>
         <HomeHeading
           id="lifestyle-title"
           eyebrow="para sentirte bien"
@@ -67,7 +68,7 @@ export function HealthyProductsSection() {
             </span>
           </Link>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

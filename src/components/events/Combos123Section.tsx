@@ -6,6 +6,7 @@ import { Check, Clock3, Store, UserRound } from "lucide-react";
 
 import { AnimatedTitle } from "@/components/sections/AnimatedTitle";
 import {
+  EventSection,
   EventReveal,
   EventItem,
   EventCard,
@@ -52,8 +53,7 @@ const combos = [
 
 export function Combos123Section() {
   return (
-    <section className="bg-[#FFF8F3] py-8 sm:py-10 lg:py-12">
-      <div className="mx-auto w-full max-w-7xl px-6 sm:px-6 lg:px-10">
+    <EventSection>
         {/* ENCABEZADO */}
         <EventReveal delay={0.05} className="mx-auto max-w-2xl text-center">
           <EventItem>
@@ -171,7 +171,6 @@ export function Combos123Section() {
             );
           })}
         </div>
-      </div>
-    </section>
+    </EventSection>
   );
 }

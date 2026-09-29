@@ -53,7 +53,14 @@ export function AnimatedTitle({
   if (reducedMotion) {
     const Tag = as;
     return (
-      <Tag id={id} className={className}>
+      <Tag
+        id={id}
+        className={className}
+        style={{
+          fontFamily: "var(--font-heading), sans-serif",
+          fontWeight: 800,
+        }}
+      >
         {lines.map((line, index) => (
           <Fragment key={index}>
             {index > 0 && <br />}
@@ -72,7 +79,11 @@ export function AnimatedTitle({
     <MotionTag
       id={id}
       className={className}
-      style={{ perspective: 700 }}
+      style={{
+        perspective: 700,
+        fontFamily: "var(--font-heading), sans-serif",
+        fontWeight: 800,
+      }}
       variants={container}
       custom={delay}
       initial="hidden"

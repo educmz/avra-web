@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { useState, type CSSProperties } from "react";
+import { Container } from "@/components/ui/Container";
 import { HomeHeading } from "./HomeHeading";
 import { HomeImage } from "./HomeImage";
 import styles from "./Home.module.css";
@@ -30,10 +31,10 @@ export function FinalCtaSection() {
   const columns = activePanel === "carta" ? "1.25fr .75fr" : activePanel === "events" ? ".75fr 1.25fr" : "1fr 1fr";
   return (
     <section aria-labelledby="final-cta-title" className={`${styles.section} ${styles.finalSection}`}>
-      <div className={`${styles.container} text-center`}>
+      <Container className="text-center">
         <HomeHeading id="final-cta-title" eyebrow="¿Y ahora?">Elige cómo quieres disfrutar Avra</HomeHeading>
-      </div>
-      <div className={`${styles.container} ${styles.panels}`} style={{ "--cta-columns": columns } as CSSProperties} onMouseLeave={() => setActivePanel(null)}>
+      </Container>
+      <Container className={styles.panels} style={{ "--cta-columns": columns } as CSSProperties} onMouseLeave={() => setActivePanel(null)}>
         {actions.map((action) => (
           <Link key={action.id} href={action.href} className={styles.panel}
             onPointerEnter={(event) => { if (event.pointerType === "mouse") setActivePanel(action.id); }}
@@ -46,7 +47,7 @@ export function FinalCtaSection() {
             </div>
           </Link>
         ))}
-      </div>
+      </Container>
     </section>
   );
 }

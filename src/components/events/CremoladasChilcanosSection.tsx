@@ -11,6 +11,7 @@ import {
 
 import { AnimatedTitle } from "@/components/sections/AnimatedTitle";
 import {
+  EventSection,
   EventReveal,
   EventItem,
   EventCard,
@@ -82,8 +83,7 @@ const packages = [
 
 export function CremoladasChilcanosSection() {
   return (
-    <section className="bg-[#FFF8F3] pt-8 pb-16 sm:pt-10 sm:pb-20 lg:pt-12 lg:pb-24">
-      <div className="mx-auto w-full max-w-7xl px-6 sm:px-6 lg:px-10">
+    <EventSection>
         {/* ENCABEZADO */}
         <EventReveal delay={0.05} className="mx-auto max-w-2xl text-center">
           <EventItem>
@@ -201,7 +201,6 @@ export function CremoladasChilcanosSection() {
             );
           })}
         </div>
-      </div>
-    </section>
+    </EventSection>
   );
 }

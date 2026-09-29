@@ -1,14 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { AnimatePresence, motion } from "motion/react";
-import { ChevronUp } from "lucide-react";
 
 import { Container } from "@/components/ui/Container";
-import { siteConfig } from "@/config/site";
 import { socialLinks } from "./socialLinks";
 
 const legalLinks = [
@@ -19,178 +14,180 @@ const legalLinks = [
   {
     label: "Política de cookies",
     href: "/politica-de-cookies",
-  },
-  {
-    label: "Libro de reclamaciones",
-    href: "/libro-de-reclamaciones",
-  },
+  }
 ];
 
 export function Footer() {
-  const pathname = usePathname();
-  const [hoveredSocial, setHoveredSocial] = useState<string | null>(null);
-  const footerLinks = [
-    { label: "Inicio", href: "/" },
-    { label: "Carta", href: "/carta" },
-    { label: "Eventos", href: "/eventos" },
-    { label: "Nosotros", href: "/nosotros" },
-    { label: "Locales", href: "/locales" },
-  ];
-
   return (
-    <footer className="relative bg-[#124C40] text-[#FFF8F3]">
-      <Container className="pb-5 pt-7 sm:pt-8">
-        <div className="grid grid-cols-1 items-center justify-items-center gap-x-8 gap-y-5 sm:grid-cols-[1fr_auto] sm:justify-items-stretch lg:grid-cols-[auto_1fr_auto]">
-          <div className="justify-self-center sm:justify-self-start">
+    <footer className="bg-black text-white">
+      <Container className="py-11 lg:py-12">
+        {/* PARTE SUPERIOR */}
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 lg:items-start lg:gap-16 xl:gap-20">
+          {/* COLUMNA 1 */}
+          <nav
+            aria-label="Navegación principal del pie de página"
+            className="flex flex-col items-start gap-6 md:grid md:h-[165px] md:grid-rows-3 md:gap-0"
+          >
+            <Link
+              href="/carta"
+              className="font-heading text-[1.55rem] uppercase leading-none tracking-[0.01em] transition-colors hover:text-[#FF6A00]"
+            >
+              Carta
+            </Link>
+
+            <Link
+              href="/locales"
+              className="font-heading text-[1.55rem] uppercase leading-none tracking-[0.01em] transition-colors hover:text-[#FF6A00] md:self-center"
+            >
+              Locales
+            </Link>
+
+            <Link
+              href="/nosotros"
+              className="font-heading text-[1.55rem] uppercase leading-none tracking-[0.01em] transition-colors hover:text-[#FF6A00] md:self-end"
+            >
+              Nosotros
+            </Link>
+          </nav>
+
+          {/* COLUMNA 2 */}
+          <nav
+            aria-label="Información adicional"
+            className="flex flex-col items-start gap-6 md:grid md:h-[165px] md:grid-rows-3 md:gap-0"
+          >
             <Link
               href="/"
-              aria-label="Avra, inicio"
-              className="
-                inline-flex
-                items-center
-                justify-center
-                overflow-hidden
-                rounded-lg
-                px-4
-                py-2.5
-              "
-              style={{
-                backgroundColor: "#FBF4EF",
-              }}
+              className="font-heading text-[1.55rem] uppercase leading-none tracking-[0.01em] transition-colors hover:text-[#FF6A00]"
             >
-              <Image
-                src="/images/brand/avra-wordmark-black.png"
-                alt="Avra"
-                width={2172}
-                height={724}
-                className="h-auto w-28 object-contain"
-              />
+              Inicio
             </Link>
-          </div>
-          <nav aria-label="Navegación del pie de página" className="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 sm:order-3 sm:col-span-2 sm:justify-start lg:order-none lg:col-span-1 lg:justify-center">
-            {footerLinks.map((item) => (
-              <Link key={item.href} href={item.href} className="flex min-h-11 items-center text-sm font-medium text-[#D0E0D7] transition-colors hover:text-[#FFB45C]">{item.label}</Link>
-            ))}
-          </nav>
-          <div className="sm:col-start-2 sm:row-start-1 sm:justify-self-end lg:col-start-3">
-            <p className="mb-3 text-center text-xs font-bold uppercase tracking-[0.18em] sm:text-left">Síguenos</p>
-            <div
-              className="flex justify-center gap-2 sm:justify-start md:justify-end"
-              aria-label="Redes sociales"
-            >
-              {socialLinks.map((social) => {
-                const isHovered = hoveredSocial === social.label;
 
-                return (
+            <Link
+              href="/eventos"
+              className="font-heading text-[1.55rem] uppercase leading-none tracking-[0.01em] transition-colors hover:text-[#FF6A00] md:self-center"
+            >
+              Eventos
+            </Link>
+          </nav>
+
+          {/* COLUMNA 3 */}
+          <div className="flex flex-col items-start">
+            <h3 className="font-heading text-[1.55rem] uppercase leading-none tracking-[0.01em]">
+              Atención al cliente
+            </h3>
+
+            <div className="mt-5 space-y-2 text-sm font-semibold uppercase leading-6 text-white">
+              <a
+                href="tel:+51999999999"
+                className="block transition-colors hover:text-[#FF6A00]"
+              >
+                +51 999 999 999
+              </a>
+
+              <a
+                href="mailto:hola@avra.pe"
+                className="block transition-colors hover:text-[#FF6A00]"
+              >
+                hola@avra.pe
+              </a>
+            </div>
+
+            <div className="mt-5">
+              <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.18em] text-white/70">
+                Síguenos
+              </p>
+
+              <div className="flex items-center gap-3">
+                {socialLinks.map((social) => (
                   <Link
                     key={social.label}
                     href={social.href}
                     target="_blank"
                     rel="noreferrer"
                     aria-label={social.label}
-                    onMouseEnter={() => setHoveredSocial(social.label)}
-                    onMouseLeave={() => setHoveredSocial(null)}
-                    onFocus={() => setHoveredSocial(social.label)}
-                    onBlur={() => setHoveredSocial(null)}
                     className="
                       grid
-                      size-11
+                      size-10
                       place-items-center
                       rounded-full
                       border
+                      border-white/35
+                      text-white
                       transition-all
-                      duration-300
+                      hover:border-[#FF6A00]
+                      hover:text-[#FF6A00]
                     "
-                    style={{
-                      backgroundColor: isHovered
-                        ? "#FBF4EF"
-                        : "transparent",
-                      borderColor: isHovered
-                        ? "#FBF4EF"
-                        : "rgba(255, 255, 255, 0.25)",
-                      color: isHovered
-                        ? "#302E2A"
-                        : "#FFF8F3",
-                    }}
                   >
                     {social.icon}
                   </Link>
-                );
-              })}
+                ))}
+              </div>
             </div>
           </div>
+
+          {/* COLUMNA 4 */}
+          <div className="flex justify-start lg:justify-end">
+            <Link
+              href="/libro-de-reclamaciones"
+              aria-label="Ir al Libro de Reclamaciones"
+              className="
+                flex
+                h-[165px]
+                w-[220px]
+                items-center
+                justify-center
+                overflow-hidden
+                rounded-md
+                border
+                border-white/80
+                transition-colors
+                hover:border-[#FF6A00]
+              "
+            >
+              <Image
+                src="/images/legal/libro-reclamaciones.png"
+                alt="Libro de Reclamaciones"
+                width={1254}
+                height={1254}
+                className="h-[190px] w-[190px] -translate-y-2 object-contain"
+              />
+            </Link>
+          </div>
         </div>
-        <div className="mt-5 flex flex-col items-center gap-2 border-t border-white/15 pt-3 text-center lg:flex-row lg:items-center lg:justify-between lg:gap-6 lg:text-left">
-          <nav aria-label="Información legal" className="flex flex-wrap items-center justify-center gap-x-5 gap-y-0 lg:justify-start">
-            {legalLinks.map((item) => (
-              <Link key={item.href} href={item.href} className="flex min-h-11 items-center text-xs text-[#D0E0D7] transition-colors hover:text-[#FFB45C]">{item.label}</Link>
-            ))}
-          </nav>
-          <p className="text-xs leading-5 text-[#D0E0D7]">© {new Date().getFullYear()} {siteConfig.name}. Todos los derechos reservados.</p>
+
+        {/* PARTE INFERIOR */}
+        <div className="mt-8 border-t border-white/20 pt-4">
+          <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+            {/* DERECHOS */}
+            <div className="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-white">
+              <p>© {new Date().getFullYear()} Avra</p>
+              <p>Todos los derechos reservados.</p>
+            </div>
+
+            {/* LEGALES */}
+            <nav
+              aria-label="Información legal"
+              className="flex flex-wrap items-center gap-x-8 gap-y-3"
+            >
+              {legalLinks.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="
+                    text-sm
+                    text-white
+                    transition-colors
+                    duration-200
+                    hover:text-[#FF6A00]
+                  "
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
         </div>
       </Container>
-      <BackToTop />
     </footer>
-  );
-}
-
-function BackToTop() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => {
-      setVisible(window.scrollY > 480);
-    };
-
-    onScroll();
-
-    window.addEventListener("scroll", onScroll, {
-      passive: true,
-    });
-
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, []);
-
-  return (
-    <AnimatePresence>
-      {visible && (
-        <motion.button
-          type="button"
-          onClick={() =>
-            window.scrollTo({
-              top: 0,
-              behavior: "smooth",
-            })
-          }
-          initial={{
-            opacity: 0,
-            y: 10,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          exit={{
-            opacity: 0,
-            y: 10,
-          }}
-          transition={{
-            duration: 0.2,
-          }}
-          whileHover={{
-            y: -2,
-          }}
-          aria-label="Volver arriba"
-          className="fixed bottom-5 right-5 z-40 grid size-10 place-items-center rounded-full bg-[#302E2A] text-white shadow-[0_8px_24px_rgba(48,46,42,0.16)] transition duration-200 hover:bg-[#FF8A00] focus-visible:outline"
-        >
-          <ChevronUp
-            className="size-4"
-            aria-hidden="true"
-          />
-        </motion.button>
-      )}
-    </AnimatePresence>
   );
 }

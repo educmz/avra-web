@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { cartaCategories } from "@/data/carta/categories";
 import type { CartaCategoryId } from "@/types/catalog";
+import { Container } from "@/components/ui/Container";
 import { HomeHeading } from "./HomeHeading";
 
 const visuals: Record<CartaCategoryId, { background: string; image: string; alt: string }> = {
@@ -51,7 +52,7 @@ const visuals: Record<CartaCategoryId, { background: string; image: string; alt:
 export function CravingsSection() {
   return (
     <section aria-labelledby="cravings-title" className="bg-background pb-12 sm:pb-16 lg:pb-20">
-      <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-10">
+      <Container>
         <HomeHeading id="cravings-title" eyebrow="A tu gusto">
           ¿Qué se te antoja?
         </HomeHeading>
@@ -96,7 +97,7 @@ export function CravingsSection() {
             </div>
           </Link>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { AnimatedTitle } from "@/components/sections/AnimatedTitle";
+import { Container } from "@/components/ui/Container";
 import {
   AboutImage,
   AboutItem,
@@ -10,7 +11,7 @@ import {
 export function TeamSection() {
   return (
     <section className="bg-background py-16 sm:py-20 lg:py-24">
-      <div className="mx-auto w-full max-w-7xl px-6 lg:px-10">
+      <Container>
         <div className="flex flex-col items-center gap-10 sm:flex-row sm:items-start sm:gap-12 lg:gap-16">
           {/* TEXTO */}
           <AboutReveal
@@ -60,7 +61,7 @@ export function TeamSection() {
             </AboutImage>
           </AboutReveal>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

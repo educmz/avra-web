@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 
 import { AnimatedTitle } from "@/components/sections/AnimatedTitle";
+import { Container } from "@/components/ui/Container";
 import {
   AboutItem,
   AboutReveal,
@@ -37,7 +38,7 @@ const essenceItems = [
 export function EssenceSection() {
   return (
     <section className="bg-background py-16 sm:py-20 lg:py-24">
-      <div className="mx-auto w-full max-w-7xl px-6 lg:px-10">
+      <Container>
         {/* CABECERA */}
         <AboutReveal
           className="mb-10 sm:mb-12 lg:mb-14"
@@ -140,7 +141,7 @@ export function EssenceSection() {
             </motion.article>
           ))}
         </AboutReveal>
-      </div>
+      </Container>
     </section>
   );
 }

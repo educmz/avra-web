@@ -6,6 +6,7 @@ import { motion } from "motion/react";
 import { Sparkles, Leaf } from "lucide-react";
 
 import { AnimatedTitle } from "@/components/sections/AnimatedTitle";
+import { Container } from "@/components/ui/Container";
 import { Parallax } from "@/components/animations/Parallax";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 import {
@@ -330,7 +331,7 @@ function StoryRow({ row }: { row: Row }) {
 export function AvraSection() {
   return (
     <section className="relative overflow-hidden bg-background py-12 sm:py-16 lg:py-20">
-      <div className="mx-auto w-full max-w-7xl px-6 sm:px-6 lg:px-10">
+      <Container>
         <HeroBlock />
 
         <div className="mt-16 lg:mt-24">
@@ -343,7 +344,7 @@ export function AvraSection() {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

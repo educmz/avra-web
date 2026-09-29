@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Anton, Caveat, Manrope, Montserrat, Pacifico } from "next/font/google";
+import {
+  Caveat,
+  League_Spartan,
+  Manrope,
+  Pacifico,
+} from "next/font/google";
 
 import { Preloader } from "@/components/animations/Preloader";
 import { Footer } from "@/components/layout/Footer";
@@ -14,10 +19,11 @@ const interfaceFont = Manrope({
   display: "swap",
 });
 
-const headingFont = Anton({
+const headingFont = League_Spartan({
   subsets: ["latin"],
-  weight: "400",
+  weight: "variable",
   variable: "--font-heading",
+  display: "swap",
 });
 
 const accentFont = Caveat({
@@ -26,10 +32,10 @@ const accentFont = Caveat({
   variable: "--font-accent",
 });
 
-const cartaFont = Montserrat({
+const cartaFont = Manrope({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-carta",
+  display: "swap",
 });
 
 const scriptFont = Pacifico({

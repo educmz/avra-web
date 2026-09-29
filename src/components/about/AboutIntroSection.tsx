@@ -4,11 +4,12 @@ import { motion } from "motion/react";
 
 import { AboutItem, AboutReveal } from "@/components/about/AboutMotion";
 import { AnimatedTitle } from "@/components/sections/AnimatedTitle";
+import { Container } from "@/components/ui/Container";
 
 export function AboutIntroSection() {
   return (
     <section className="bg-background py-16 sm:py-20 lg:py-24">
-      <div className="mx-auto w-full max-w-7xl px-6 lg:px-10">
+      <Container>
         {/* CABECERA */}
         <AboutReveal
           className="mb-10 text-center sm:mb-12 lg:mb-14"
@@ -66,7 +67,7 @@ export function AboutIntroSection() {
             </motion.div>
           </AboutItem>
         </AboutReveal>
-      </div>
+      </Container>
     </section>
   );
 }

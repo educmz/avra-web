@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 import { motion, type Variants } from "motion/react";
 
+import { Container } from "@/components/ui/Container";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { cn } from "@/lib/utils";
 
@@ -17,6 +18,15 @@ interface ContainerProps {
   stagger?: number;
   /** Fracción visible que dispara la animación al hacer scroll. */
   amount?: number;
+}
+
+/** Wrapper compartido para mantener el mismo ancho y espaciado en todo Eventos. */
+export function EventSection({ children }: Pick<ContainerProps, "children">) {
+  return (
+    <section className="bg-[#FFF8F3] py-10 sm:py-12 lg:py-16">
+      <Container>{children}</Container>
+    </section>
+  );
 }
 
 const groupVariants = (stagger: number, delayChildren: number): Variants => ({

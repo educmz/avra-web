@@ -6,6 +6,7 @@ import { CartaCategoryNav } from "@/components/carta/CartaCategoryNav";
 import { CartaCard } from "@/components/carta/CartaCard";
 import { AnimatedTitle } from "@/components/sections/AnimatedTitle";
 import { ImageHero } from "@/components/sections/ImageHero";
+import { Container } from "@/components/ui/Container";
 
 import { cartaCategories } from "@/data/carta/categories";
 import { cartaProducts } from "@/data/carta/products";
@@ -144,7 +145,7 @@ export function CartaCatalog() {
         onChange={goToCategory}
       />
 
-      <div className="mx-auto min-w-0 max-w-7xl px-6 pb-16 sm:px-6 sm:pb-24 lg:px-10 lg:pb-28">
+      <Container className="min-w-0 pb-16 sm:pb-24 lg:pb-28">
         {sections.map(({ category, items }) => (
           <section
             key={category.id}
@@ -174,7 +175,7 @@ export function CartaCatalog() {
             </div>
           </section>
         ))}
-      </div>
+      </Container>
     </section>
   );
 }

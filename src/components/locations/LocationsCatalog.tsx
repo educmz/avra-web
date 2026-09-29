@@ -1,4 +1,5 @@
 import { AnimatedTitle } from "@/components/sections/AnimatedTitle";
+import { Container } from "@/components/ui/Container";
 import { locations } from "@/data/locations";
 import { LocationCard } from "./LocationCard";
 import { LocationsBanner } from "./LocationsBanner";
@@ -15,7 +16,7 @@ export function LocationsCatalog() {
     >
       <LocationsBanner />
 
-      <div className="mx-auto w-full max-w-7xl px-6 pb-28 pt-10 sm:px-6 sm:pb-36 sm:pt-14 lg:px-10">
+      <Container className="pb-28 pt-10 sm:pb-36 sm:pt-14">
         <div className="mb-10 sm:mb-12">
           <p className="mb-3 font-[family-name:var(--font-script)] text-2xl font-normal lowercase leading-relaxed tracking-normal text-[#FF8A00] sm:text-3xl">Encuéntranos</p>
           <AnimatedTitle
@@ -32,7 +33,7 @@ export function LocationsCatalog() {
             />
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

@@ -13,6 +13,7 @@ import {
 
 import { AnimatedTitle } from "@/components/sections/AnimatedTitle";
 import {
+  EventSection,
   EventReveal,
   EventRevealImage,
   EventGroup,
@@ -42,9 +43,8 @@ export function PopcornManzanasSalchiNuggetsSection() {
   const whatsappUrl = buildEventWhatsAppUrl(whatsappNumber, promotion);
 
   return (
-    <section className="bg-[#FFF8F3] py-10 sm:py-12 lg:py-16">
-      <div className="mx-auto w-full max-w-7xl px-6 sm:px-6 lg:px-10">
-        <div className="grid grid-cols-1 items-center gap-7 lg:grid-cols-2 lg:gap-10">
+    <EventSection>
+        <div className="grid grid-cols-1 items-center gap-7 lg:grid-cols-2 lg:gap-10 xl:grid-cols-[minmax(0,520px)_minmax(0,1fr)]">
 
           {/* TÍTULO — en móvil va sobre la imagen */}
           <div className="min-w-0 lg:hidden">
@@ -66,7 +66,7 @@ export function PopcornManzanasSalchiNuggetsSection() {
           </div>
 
           {/* IMAGEN */}
-          <EventRevealImage className="relative mx-auto w-full max-w-[520px] overflow-hidden rounded-2xl bg-[#F4E8DF]">
+          <EventRevealImage className="relative mx-auto w-full max-w-[520px] overflow-hidden rounded-2xl bg-[#F4E8DF] lg:mx-0">
             <div className="relative aspect-[1122/1402]">
               <Image
                 src="/images/events/popcorn-manzanas-salchi-nuggets.webp"
@@ -79,7 +79,7 @@ export function PopcornManzanasSalchiNuggetsSection() {
           </EventRevealImage>
 
           {/* CONTENIDO */}
-          <EventReveal delay={0.05} className="min-w-0 max-w-xl">
+          <EventReveal delay={0.05} className="min-w-0 max-w-xl lg:max-w-none">
             <div className="hidden lg:block">
               <EventItem>
                 <p
@@ -189,7 +189,6 @@ export function PopcornManzanasSalchiNuggetsSection() {
           </EventReveal>
 
         </div>
-      </div>
-    </section>
+    </EventSection>
   );
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight, Check } from "lucide-react";
 
+import { Container } from "@/components/ui/Container";
 import { HomeImage } from "./HomeImage";
 import { HomeHeading } from "./HomeHeading";
 import styles from "./Home.module.css";
@@ -17,7 +18,7 @@ export function VendingSection() {
       aria-labelledby="vending-title"
       className={styles.section}
     >
-      <div className={styles.container}>
+      <Container>
         <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           {/* CONTENIDO */}
           <div>
@@ -28,14 +29,7 @@ export function VendingSection() {
               Avra, donde la necesites
             </HomeHeading>
 
-            <p className="mt-6 max-w-xl text-base leading-7 text-[#5E5A54] sm:text-lg sm:leading-8">
-              Llevamos nuestra propuesta de comida, jugos y bebidas a oficinas,
-              universidades, clínicas, gimnasios y otros espacios a través de
-              máquinas expendedoras modernas, prácticas y pensadas para
-              acompañar tu día.
-            </p>
-
-            <div className="mt-7 space-y-3">
+            <div className="space-y-3">
               {vendingBenefits.map((benefit) => (
                 <div
                   key={benefit}
@@ -78,11 +72,11 @@ export function VendingSection() {
                 alt="Máquina expendedora Avra"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-contain object-center"
+                className="object-contain object-center lg:object-right"
             />
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

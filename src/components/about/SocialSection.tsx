@@ -7,6 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./SocialSection.module.css";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { Container } from "@/components/ui/Container";
 import {
   Bookmark,
   Heart,
@@ -148,7 +149,7 @@ export function SocialSection() {
 
   return (
     <section className={`${styles.section} bg-background`}>
-      <div className="mx-auto w-full max-w-7xl px-6 lg:px-10">
+      <Container>
         {/* CABECERA */}
         <AboutReveal
           className="mb-6 sm:mb-7"
@@ -546,7 +547,7 @@ export function SocialSection() {
             />
           </motion.div>
         </AboutReveal>
-      </div>
+      </Container>
     </section>
   );
 }
