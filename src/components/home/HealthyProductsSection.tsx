@@ -34,7 +34,7 @@ export function HealthyProductsSection() {
           id="lifestyle-title"
           eyebrow="para sentirte bien"
         >
-          Rico, fresco y a tu manera.
+          Rico, fresco y a tu manera
         </HomeHeading>
 
         <div className={styles.lifestyle}>
